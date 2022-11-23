@@ -78,9 +78,7 @@ const moviesController = {
 
                 const { Title, Released, imdbRating, Awards, Runtime, Poster } = movie
 
-                /* let awardsArray = Awards.split(" ")
-                let awardsFilter = awardsArray.filter(char => !isNaN(char))
-                let awardsTotal = awardsFilter.reduce((acum, num) => +acum + +num) */
+                
 
                 if (movie && movie.Error === 'Movie not found!') {
                     return res.send("No hay pelicula con ese nombre")
@@ -114,7 +112,7 @@ const moviesController = {
             console.log(error)
         }
     },
-    //Aqui dispongo las rutas para trabajar con el CRUD
+   
     add: function (req, res) {
         let promGenres = Genres.findAll();
         let promActors = Actors.findAll();

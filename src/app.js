@@ -5,16 +5,16 @@ const methodOverride = require('method-override');
 const app = express();
 
 
-//Ejecuto el llamado a mis rutas
+
 const indexRouter = require('./routes/index');
 const moviesRoutes = require('./routes/moviesRoutes');
 const genresRoutes = require('./routes/genresRoutes');
 
-//Aquí llamo a la ruta de las api de movies
+
 const apiMoviesRouter = require('./routes/api/movies')
-//Aquí llamo a la ruta de las api de actors
+
 const apiGenresRouter = require('./routes/api/genres')
-//Aquí llamo a la ruta de las api de actors
+
 const apiActorsRouter = require('./routes/api/actors')
 
 
